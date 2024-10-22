@@ -90,9 +90,9 @@ public class BoxBall
         yPosition += ySpeed + randomSpeed.nextInt(2);// x speed and y speed randomized, but not 0
         xPosition += xSpeed + randomSpeed.nextInt(2);
         
-        int r = colorRand.nextInt(230) + 15;
-        int g = colorRand.nextInt(230) + 15;
-        int b = colorRand.nextInt(230) + 15;
+        int r = colorRand.nextInt(200) + 15;
+        int g = colorRand.nextInt(200) + 15;
+        int b = colorRand.nextInt(200) + 15;
         Color randomColor = new Color(r,g,b);
 
         // check if it has hit the ground
