@@ -80,9 +80,9 @@ public class BallDemo
         //create balls with random position, diameter and color
         for(int i = 0; i < n; i++)
         {
-            float r = colorRand.nextFloat();
-            float g = colorRand.nextFloat();
-            float b = colorRand.nextFloat();
+            int r = colorRand.nextInt(200) + 15;
+            int g = colorRand.nextInt(200) + 15;
+            int b = colorRand.nextInt(200) + 15;
             Color randomColor = new Color(r,g,b);
             boxBall = new BoxBall(xRand.nextInt(400), yRand.nextInt(550), diaRand.nextInt(10) + 10, randomColor, 400, 100, 50, 550, myCanvas);
             boxList.add(boxBall);

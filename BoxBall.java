@@ -28,8 +28,8 @@ public class BoxBall
     private final int left;
     private final int right;
     private Canvas canvas;
-    private int ySpeed = 7;
-    private int xSpeed = 7;
+    private int ySpeed = 10;
+    private int xSpeed = 10;
     private Random randomSpeed;
     
     /**
@@ -90,9 +90,9 @@ public class BoxBall
         yPosition += ySpeed + randomSpeed.nextInt(2);// x speed and y speed randomized, but not 0
         xPosition += xSpeed + randomSpeed.nextInt(2);
         
-        float r = colorRand.nextFloat();
-        float g = colorRand.nextFloat();
-        float b = colorRand.nextFloat();
+        int r = colorRand.nextInt(230) + 15;
+        int g = colorRand.nextInt(230) + 15;
+        int b = colorRand.nextInt(230) + 15;
         Color randomColor = new Color(r,g,b);
 
         // check if it has hit the ground
