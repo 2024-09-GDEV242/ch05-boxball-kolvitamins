@@ -11,11 +11,9 @@ import java.util.ArrayList;
  *
  * This movement can be initiated by repeated calls to the "move" method.
  * 
- * @author Michael Kölling (mik)
- * @author David J. Barnes
- * @author Bruce Quig
+ * @author Jeff Kolvites
  *
- * @version 2016.02.29
+ * @version 2024.10.18
  */
 
 public class BoxBall
